@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FEFBF1;
+    color: #703412;
+    font-size: 24px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header__menu {
+    text-align: center;
+    margin: 30px 0 140px 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.header__menu-link {
+    padding: 0 15px;
+    transition: opacity 125ms linear;
+}
+
+.header__menu-link:hover {
+    opacity: 0.75;
+}
+
+.main {
+    margin-bottom: 200px;
+}
+
+.main__subtitle {
+    font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #703412;
+}
+
+.main__title {
+    width: 100%;
+    max-width: 870px;
+    margin-bottom: 120px;
+    font-size: 80px;
+}
+
+.main__description {
+    font-size: 32px;
+    max-width: 570px;
+    color: #703412;
+}
+
+.card {
+    max-width: calc(33% - 40px);
+}
+
+.card__image {
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.cards__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-bottom: 100px;
+}
+
+.card__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card__description {
+    color: #703412;
+    font-size: 12px;
+}
+
+.footer {
+    background-color: #084935;
+    color: #fff;
+}
+
+.footer__subtitle {
+    padding-top: 120px;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+.footer__desc {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 70px;
+    color: #fff;
+}
+
+.footer__links-block {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+
+    padding-bottom: 80px;
+    border-bottom: 1px solid rgba(255,255,255, 0.16);
+}
+
+.footer__links-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__links-column a, p {
+    margin-bottom: 10px;
+    color: rgba(255,255,255, 0.75);
+    transition: color 125ms linear;
+}
+
+.footer__links-column a:hover {
+    color: #fff;
+}
+
+.footer__copyright {
+    padding: 24px 0;
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+}

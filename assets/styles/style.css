@@ -25,7 +25,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #FEFBF1;
     color: #703412;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .container {
@@ -36,14 +36,18 @@ body {
 }
 
 .header__menu {
+    display: flex;
+    align-items: center;
     text-align: center;
+    justify-content: center;
+    gap: 40px;
+
     margin: 30px 0 140px 0;
-    font-size: 14px;
+    font-size: 1em;
     font-weight: 400;
 }
 
 .header__menu-link {
-    padding: 0 15px;
     transition: opacity 125ms linear;
 }
 
@@ -70,13 +74,13 @@ body {
 }
 
 .main__description {
-    font-size: 32px;
+    font-size: 2em;
     max-width: 570px;
     color: #703412;
 }
 
 .card {
-    max-width: calc(33% - 40px);
+    width: 275px;
 }
 
 .card__image {
@@ -93,13 +97,13 @@ body {
 }
 
 .card__title {
-    font-size: 24px;
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
 
 .card__description {
     color: #703412;
-    font-size: 12px;
+    font-size: 0.8em;
 }
 
 .footer {
@@ -110,13 +114,13 @@ body {
 .footer__subtitle {
     padding-top: 120px;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.8em;
     margin-bottom: 24px;
     color: #fff;
 }
 
 .footer__desc {
-    font-size: 30px;
+    font-size: 2em;
     font-weight: 400;
     margin-bottom: 70px;
     color: #fff;
@@ -149,6 +153,50 @@ body {
 .footer__copyright {
     padding: 24px 0;
     color: #fff;
-    font-size: 16px;
+    font-size: 1em;
     margin: 0;
+}
+
+
+@media screen and (max-width: 576px) {
+    .header__menu {
+        font-size: 3em;
+    }
+
+    .main__subtitle {
+        font-size: 2em;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card__title {
+        font-size: 2em;
+    }
+
+    .card__description {
+        font-size: 1.5em;
+    }
+
+    .footer__subtitle {
+        font-size: 1em;
+        padding-top: 60px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .header__menu {
+        font-size: 2em;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .card {
+        width: 45%;
+    }
 }
